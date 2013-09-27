@@ -1,4 +1,4 @@
-myeuler
+my blog using node.js and various js technologies
 =======
 
-my answers to euler problems in javascript
+a live personal project to document my learning experience.
