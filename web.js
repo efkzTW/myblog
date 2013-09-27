@@ -3,7 +3,8 @@ var app = express();
 app.use(express.logger());
 
 app.get('/', function(request, response) {
-	response.send("My answers to Euler problems all in JavaScript (including this site).");
+	response.send("Welcome to my blog, which features an absolute beginner's \
+		experience about javascript and web development. starting here. now.");
 });
 
 var port = process.env.PORT || 5000;
