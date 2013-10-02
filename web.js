@@ -1,11 +1,9 @@
-var express = require("express");
+var express = require('express');
 var app = express();
+var path = require('path');
 app.use(express.logger());
 
-app.get('/', function(request, response) {
-	response.send("Welcome to my blog, which features an absolute beginner's \
-		experience about javascript and web development. starting here. now.");
-});
+app.use(express.static(path.join(__dirname, 'static')));
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
